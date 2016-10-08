@@ -25,7 +25,6 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
-  // Define the configuration for all the tasks
   grunt.initConfig({
 
     // Project settings
@@ -66,6 +65,7 @@ module.exports = function (grunt) {
         ]
       }
     },
+
 
     // The actual grunt server settings
     connect: {
@@ -514,5 +514,7 @@ module.exports = function (grunt) {
     'build'
   ]);
 
-  grunt.loadNpmTasks('grunt-heroku-deploy');
+  grunt.registerTask('heroku:development', 'clean less mincss');
+
+  
 };
