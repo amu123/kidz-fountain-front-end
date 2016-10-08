@@ -31,7 +31,7 @@
     "time-grunt": "^1.4.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": "5.0.0"
   },
   "dependencies": {
     "grunt": "*",
@@ -40,6 +40,6 @@
   },
   "scripts": {
     "start": "grunt serve",
-    "postinstall": "grunt build"
+    "postinstall": "grunt build --force"
   }
 }
