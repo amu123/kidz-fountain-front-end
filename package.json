@@ -40,6 +40,6 @@
   },
   "scripts": {
   "start": "grunt serve",
-  "postinstall": "bower install && grunt build"
+  "postinstall": "grunt build"
   }
 }
