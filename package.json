@@ -39,6 +39,7 @@
     "less": "*"
   },
   "scripts": {
-  "start": "grunt serve"
+  "start": "grunt serve",
+  "postinstall": "bower install && grunt build"
   }
 }
