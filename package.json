@@ -38,9 +38,4 @@
     "grunt-cli": "1.2.0",
     "grunt-contrib-uglify": "0.7.0"
   }
-
-  "scripts": {
-    "postinstall": "grunt uglify",
-    "start": "node server.js"
-  }
 }
