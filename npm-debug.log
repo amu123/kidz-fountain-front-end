@@ -9370,7 +9370,7 @@
 12980 verbose lifecycle angulartutorial@~postinstall: unsafe-perm in lifecycle true
 12981 verbose lifecycle angulartutorial@~postinstall: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/tlharihani/Desktop/Glory project/kidz-fountain-front-end/node_modules/.bin:/Users/tlharihani/.rvm/gems/ruby-2.3.0/bin:/Users/tlharihani/.rvm/gems/ruby-2.3.0@global/bin:/Users/tlharihani/.rvm/rubies/ruby-2.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tlharihani/Library/Android/sdk:/Users/tlharihani/.rvm/bin
 12982 verbose lifecycle angulartutorial@~postinstall: CWD: /Users/tlharihani/Desktop/Glory project/kidz-fountain-front-end
-12983 silly lifecycle angulartutorial@~postinstall: Args: [ '-c', 'bower install && grunt build' ]
+12983 silly lifecycle angulartutorial@~postinstall: Args: [ '-c', 'grunt build' ]
 12984 silly lifecycle angulartutorial@~postinstall: Returned: code: 6  signal: null
 12985 info lifecycle angulartutorial@~postinstall: Failed to exec postinstall script
 12986 warn EPEERINVALID grunt-contrib@0.11.0 requires a peer of grunt-contrib-clean@~0.5.0 but none was installed.
@@ -9398,7 +9398,7 @@
 13008 warn EPEERINVALID grunt-contrib@0.11.0 requires a peer of grunt-contrib-symlink@~0.3.0 but none was installed.
 13009 warn EPEERINVALID grunt-contrib@0.11.0 requires a peer of grunt-contrib-uglify@~0.4.0 but none was installed.
 13010 warn EPEERINVALID grunt-contrib@0.11.0 requires a peer of grunt-contrib-yuidoc@~0.5.0 but none was installed.
-13011 verbose stack Error: angulartutorial@ postinstall: `bower install && grunt build`
+13011 verbose stack Error: angulartutorial@ postinstall: `grunt build`
 13011 verbose stack Exit status 6
 13011 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
 13011 verbose stack     at emitTwo (events.js:87:13)
@@ -9415,13 +9415,13 @@
 13016 error node v5.0.0
 13017 error npm  v3.3.6
 13018 error code ELIFECYCLE
-13019 error angulartutorial@ postinstall: `bower install && grunt build`
+13019 error angulartutorial@ postinstall: `grunt build`
 13019 error Exit status 6
-13020 error Failed at the angulartutorial@ postinstall script 'bower install && grunt build'.
+13020 error Failed at the angulartutorial@ postinstall script 'grunt build'.
 13020 error This is most likely a problem with the angulartutorial package,
 13020 error not with npm itself.
 13020 error Tell the author that this fails on your system:
-13020 error     bower install && grunt build
+13020 error     grunt build
 13020 error You can get their info via:
 13020 error     npm owner ls angulartutorial
 13020 error There is likely additional logging output above.
