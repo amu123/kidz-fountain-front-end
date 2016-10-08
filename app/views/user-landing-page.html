@@ -1,0 +1,65 @@
+<div class="container">
+      <h1 align="center">Welcome {{user.name}} {{user.surname}}</h1>
+      <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Up coming events Events</div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <h1 ng-if="!activeEvents" align="center">No Up coming events</h1>
+        <table ng-if="activeEvents" st-table="rowCollection" class="table table-striped">
+              <thead>
+            <tr>
+                <th st-sort="title">Title</th>
+                <th st-sort="description">Description</th>
+                <th st-sort="date">Date</th>
+                <th >Actions</th>
+
+                <tbody>
+                <tr valign="middle" ng-repeat="event in events">
+                <td><a ng-click="edit(admin)">{{event.title}}</a></td>
+                <td>{{event.description}}</td>
+                <td>{{event.date}}</td>
+
+                <td>
+                 <div class='table-action-container'>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <a class="btn-xs btn-danger table-action-btn"  ng-click="delete(event)">
+                            <span class="button btn-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                          </a>
+                         
+                        </div>
+                       
+                       
+                    </div>
+                    </div>
+                </td>
+                </tr>
+                </tbody>
+                
+            </tr>
+            </thead>
+         </table>
+            
+        </div>
+        </div>
+      
+            <div class="row"  align="center">
+                   
+                        <div class="form-group" >
+                        <button type="submit" class=" btn btn-primary"  ng-click="checkStatus()">Check status</button>
+                             <button type="submit" ng-if="isApproved && isRegistrationActive" class="btn btn-primary"  ng-click="register()">Register</button>
+                             <button type="submit" ng-if="isRegistered" class="btn btn-primary"  ng-click="proof()">View proof of registration</button>
+                        
+                             <button type="submit" class="btn btn-primary"  ng-click="viewprofile(user.name)">View Profile</button>
+                        </div>
+                 
+                    
+               
+     
+      </div>
+       </div>

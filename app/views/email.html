@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Send email </div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <form  novalidate>
+
+        <div class="row" align="center">
+                        <div class="col-md-12" >
+                            <div class="form-group" >
+                                <label for="companysite">{{sendTo}}</label>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+            <div class="row col-md-12 form-group">
+                <label >Subject <strong style="color: red">*</strong></label>
+                <div>
+                 <input type="text" name="subject" placeholder="Subject" class ="form-control" ng-model="user.subject" required />
+                </div>
+            </div>
+	        <div class="row  col-md-12">
+	            <div class="form-group" >   
+                 <label >Body <strong style="color: red">*</strong></label>          
+	              <textarea textalign="center" rows="10" name="name" ng-model="user.message" class ="form-control" required />
+	               </div>
+	         </div>
+             <div class="row form-group" align="center">
+                 <button type="submit" class="btn btn-primary"  ng-click="send()"> Send</button>
+                   <button type="submit" class="btn btn-primary" ng-click="cancel()"> Cancel</button>
+             </div>
+
+	                
+
+        </form>
+
+
+
+        </div>
+      </div>
+      </div>

@@ -1,0 +1,100 @@
+<div class="container">
+    <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Admin profile <span style="color: red; float: right;">required fields *</span></div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <form  novalidate>
+          <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">ID <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="id" class="form-control" ng-model="user.idNumber"  readonly="true" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div> 	   
+	        <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Name <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" placeholder="Name" class ="form-control" ng-model="user.name" ng-readonly="edit" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                
+
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">surname <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="surname" class="form-control" ng-model="user.surname" ng-readonly="edit" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                          
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Contact <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" maxlength="10" placeholder="contact" class="form-control" ng-model="user.contact" ng-readonly="edit" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Address <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="address" class="form-control" ng-model="user.address" ng-readonly="edit" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                    
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Email <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="email" class="form-control" ng-model="user.email" ng-readonly="edit" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <button type="submit" class="btn btn-primary" ng-if="edit" ng-click="edits()"> EDIT </button>
+                              <button type="submit" class="btn btn-primary" ng-if ="!edit" ng-click="update()"> UPDATE </button>
+                              <button type="submit" align="right" class="btn btn-primary" ng-if ="isSuperAdmin" ng-click="delete()"> DELETE </button>
+                              <button type="submit"  ng-if="isSuperAdmin" class="btn btn-primary" ng-click="sendEmail()"> Send Email</button>
+                              <button type="submit" align="right" class="btn btn-primary" ng-click="resetpassword()"> RESET PASSWORD </button>
+                               
+                        </div>
+
+                    </div>
+                </div>
+
+        </form>
+        </div>
+      </div>
+      </div>

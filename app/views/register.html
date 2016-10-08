@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Register Admin <span style="color: red; float: right;">required fields *</span></div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <form  novalidate>
+	        <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Name <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" placeholder="Name" ng-change="isName()" class ="form-control" ng-model="user.name" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                
+
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">surname <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name"  placeholder="surname" class="form-control" ng-model="user.surname" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">ID <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" maxlength="13" placeholder="id" class="form-control" ng-model="user.idNumber" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div> 	               
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Contact <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" maxlength="10" name="name" placeholder="contact" class="form-control" ng-model="user.contact" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Address <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name"  placeholder="address" class="form-control" ng-model="user.address" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                    
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Email <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" placeholder="email" class="form-control" ng-model="user.email" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <button type="submit" class="btn btn-primary btn-block" ng-click="save()"> Register </button>
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+        </div>
+      </div>
+      </div>

@@ -1,0 +1,106 @@
+<div class="container">
+    <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Login</div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <form  novalidate>
+	        <div class="row">
+	                    <div class="col-md-12" ng-if="!enterpassword" >
+	                        <div class="form-group" >
+	                            <label for="companysite">Enter username <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input ng-change="activateButton()" type="text" name="name" placeholder="username" class ="form-control" ng-model="user.username" required />
+	                            </div>
+
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+
+                    <div class="row" align="center">
+                        <div class="col-md-12" ng-if="enterpassword" >
+                            <div class="form-group" >
+                                <label for="companysite">{{name}}</label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                  
+
+	                <div class="row" ng-if="enterpassword" >
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Enter password <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="password" name="name" placeholder="password" class ="form-control" ng-model="user.password" required />
+	                            </div>
+
+	                            
+	                        </div>
+	                    </div>
+                        <div class="col-md-12" ng-if="!passwordActive">
+                            <div class="form-group" >
+                                <label for="companysite">Confirm password <strong style="color: red">*</strong></label>
+                                <div>
+                                    <input type="password" name="name" placeholder="confirm password" class ="form-control" ng-model="uuu.confirmpassword" required />
+                                </div>
+
+                                
+                            </div>
+                        </div>
+	                </div>
+	                
+	                
+	                
+
+	                <div class="row" ng-if="!loginsssss && passwordActive">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <button type="submit" class="btn btn-primary btn-block" ng-disabled="validUsername" ng-click="submitUsername()"> submit </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row"  ng-if="!passwordActive">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <button type="submit" class="btn btn-primary btn-block" ng-disabled="!user.password" ng-click="setPassword()"> Set Password </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row"  ng-if="passwordActive && !submitDetails">
+                    <div class="col-md-12">
+                        <div  class="form-group">
+                             <button type="submit" class="btn btn-primary btn-block" ng-disabled="!user.password" ng-click="loginss()"> Login</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row"  >
+                 <div class="col-md-12">
+                       <div class="form-group" ng-if="applicationStatus">
+                        <label> Application is open click....</label>
+                        <a ng-href="#/application">Apply</a>
+                    </div>
+                     <div class="form-group" ng-if="!applicationStatus">
+                        <label> Application is closed...</label>
+                       
+                    </div>
+
+                   </div>
+ </div>
+
+        </form>
+
+
+
+        </div>
+      </div>
+      </div>

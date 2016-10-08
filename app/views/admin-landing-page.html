@@ -1,0 +1,121 @@
+<div class="container">
+
+      <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Welcome  {{user.name}} {{user.surname}}</div>
+            <div class="panel-body" >
+            <div class="row">
+                 <div class="col-md-12">
+            <div class="form-group">
+
+           <div>
+            <input type="text" name="name" placeholder="Enter ID/Student Number" class ="btn col-md-5" ng-model="searchStudentId" required />
+           
+             
+             <input type="submit" ng-click="searchStudent()" value="Search" class="btn btn-primary" ng-disabled="false" />
+              <input type="submit" ng-click="viewAllApplication()" value="View all applications" class="btn btn-primary" ng-disabled="false" ng-if="viewApplicatios"/>
+             <input type="submit" ng-click="viewAllApproved()" value="View all approved" class="btn btn-primary" ng-disabled="false" ng-if="viewAppoved"/>
+             <input type="submit" ng-click="viewAllRegistered()" value="View all registered" class="btn btn-primary" ng-disabled="false" ng-if="viewRegistration" />
+             </div>
+            
+                
+          
+
+       </div>
+       </div>
+            </div>
+            <table st-table="rowCollection" class="table table-striped" ng-if="hasApplicationsStudents || hasApprovedStudents || hasRegisteredStudents">
+            <thead>
+            <tr>
+                <th st-sort="studentNumber">Student Number</th>
+                <th st-sort="name">Student Name</th>
+                <th st-sort="surname">Student Surname</th>
+                <th st-sort="id"> ID Number</th>
+                <th st-sort="status">Application Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr valign="middle" ng-repeat="student in students">
+                 
+                <td><a ng-click="viewapplication(student)">{{student.studentNumber}}</a></td>
+                <td>{{student.name}}</td>
+                <td>{{student.surname}}</td>
+                <td>{{student.idNumber}}</td>
+                <td>{{student.applicationStatus}}</td>
+                
+            </tr>
+            <tr>
+                <h3 align="center">Total {{StudentsStatus}}: {{total}}</h3>
+            </tr>
+            </tbody>
+        </table>
+         <h1 ng-if="!hasApplicationsStudentss" align="center">No applications</h1>
+          <h1 ng-if="!hasApprovedStudentss" align="center">No approved students</h1>
+           <h1 ng-if="!hasRegisteredStudentss" align="center">No registered students</h1>
+
+        
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        
+          
+        </div>
+      </div>
+      <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Up Coming Events</div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <h1 ng-if="!activeEvents" align="center">No active events</h1>
+        <table ng-if="activeEvents" st-table="rowCollection" class="table table-striped">
+              <thead>
+            <tr>
+                <th st-sort="title">Title</th>
+                <th st-sort="description">Description</th>
+                <th st-sort="date">Date</th>
+
+                <tbody>
+                <tr valign="middle" ng-repeat="event in events">
+                <td><a ng-click="edit(admin)">{{event.title}}</a></td>
+                <td>{{event.description}}</td>
+                <td>{{event.date}}</td>
+
+                </tr>
+                </tbody>
+                
+            </tr>
+            </thead>
+         </table>
+            
+        </div>
+        </div>
+         <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+
+            <div class="panel-body" >
+            
+        <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <button type="submit" class="btn btn-block btn-primary"  ng-click="viewprofile()"> VIEW PROFILE </button>
+                                 
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        
+          
+        </div>
+      </div>
+      </div>

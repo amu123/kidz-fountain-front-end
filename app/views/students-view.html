@@ -1,0 +1,132 @@
+<div class="container">
+
+      <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Welcome  {{user.name}} {{user.surname}}</div>
+            <div class="panel-body" >
+            <div class="row">
+                 <div class="col-md-12">
+            <div class="form-group">   
+
+       </div>
+       </div>
+            </div>
+            <table st-table="rowCollection" class="table table-striped">
+            <thead>
+            <tr>
+                <th st-sort="studentNumber">Student Number</th>
+                <th st-sort="name">Student Name</th>
+                <th st-sort="surname">Student Surname</th>
+                <th st-sort="id"> ID Number</th>
+                <th st-sort="status">Application Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr valign="middle" ng-repeat="student in students">
+                 
+                <td><a ng-click="viewapplication(student)">{{student.studentNumber}}</a></td>
+                <td>{{student.name}}</td>
+                <td>{{student.surname}}</td>
+                <td>{{student.idNumber}}</td>
+                <td>{{student.applicationStatus}}</td>
+                
+            </tr>
+            </tbody>
+        </table>
+        
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        
+          
+        </div>
+      </div>
+      <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Approved students</div>
+            <div class="panel-body" >
+            <div class="row">
+                 <div class="col-md-12">
+            <div class="form-group">   
+
+       </div>
+       </div>
+            </div>
+            <table st-table="rowCollection" class="table table-striped">
+            <thead>
+            <tr>
+                <th st-sort="studentNumber">Student Number</th>
+                <th st-sort="name">Student Name</th>
+                <th st-sort="surname">Student Surname</th>
+                <th st-sort="id"> ID Number</th>
+                <th st-sort="status">Application Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr valign="middle" ng-repeat="student in students">
+                 
+                <td><a ng-click="viewapplication(student)">{{student.studentNumber}}</a></td>
+                <td>{{student.name}}</td>
+                <td>{{student.surname}}</td>
+                <td>{{student.idNumber}}</td>
+                <td>{{student.applicationStatus}}</td>
+                
+            </tr>
+            </tbody>
+        </table>
+        
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        
+          
+        </div>
+      </div>
+      <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Registered students</div>
+            <div class="panel-body" >
+            <div class="row">
+                 <div class="col-md-12">
+            <div class="form-group">   
+
+       </div>
+       </div>
+            </div>
+            <table st-table="rowCollection" class="table table-striped">
+            <thead>
+            <tr>
+                <th st-sort="studentNumber">Student Number</th>
+                <th st-sort="name">Student Name</th>
+                <th st-sort="surname">Student Surname</th>
+                <th st-sort="id"> ID Number</th>
+                <th st-sort="status">Application Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr valign="middle" ng-repeat="student in students">
+                 
+                <td><a ng-click="viewapplication(student)">{{student.studentNumber}}</a></td>
+                <td>{{student.name}}</td>
+                <td>{{student.surname}}</td>
+                <td>{{student.idNumber}}</td>
+                <td>{{student.applicationStatus}}</td>
+                
+            </tr>
+            </tbody>
+        </table>
+        
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        
+          
+        </div>
+      </div>
+</div>

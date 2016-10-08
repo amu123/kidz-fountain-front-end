@@ -1,0 +1,76 @@
+<div class="container">
+      <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Welcome To Kidz Fountain Pre-school online system as Super Admin</div>
+            
+        </div>
+        <div class="panel-body" >
+         <table st-table="rowCollection" class="table table-striped">
+              <thead>
+            <tr>
+                <th st-sort="studentNumber">Staff Number</th>
+                <th st-sort="name">Staff Name</th>
+                <th st-sort="surname">Staff Surname</th>
+                <th st-sort="id">Staff ID No</th>
+                <th >Actions</th>
+                </tr>
+
+                <tbody>
+                <tr valign="middle" ng-repeat="admin in admins">
+                <td><a ng-click="edit(admin)">{{admin.staffNumber}}</a></td>
+                <td>{{admin.name}}</td>
+                <td>{{admin.surname}}</td>
+                <td>{{admin.idNumber}}</td>
+
+                <td>
+                 <div class='table-action-container'>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <a class="btn-xs btn-danger table-action-btn"  ng-click="delete(admin)">
+                            <span class="button btn-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                          </a>
+                         
+                        </div>
+                       
+                       
+                    </div>
+                    </div>
+                </td>
+                </tr>
+                </tbody>
+                
+            
+            </thead>
+         </table>
+            
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        </div>
+        <div class="row" >
+                    
+                        <div class="form-group" align="center">
+                             <button type="submit" class="btn btn-primary" ng-click="register()">Register Admin</button>
+                        
+                             <button ng-if="!applicationStatuss" type="submit" class="btn btn-primary" ng-click="activateApplication()">Activate Application</button>
+                        
+                             <button ng-if="applicationStatuss" type="submit" class="btn btn-primary" ng-click="deactivateApplication()">Deactivate Application</button>
+                      
+                             <button ng-if="!registrationStatuss" type="submit" class="btn btn-primary" ng-click="activateRegistration()">Activate Registration</button>
+                        
+                             <button ng-if="registrationStatuss" type="submit" class="btn btn-primary" ng-click="deactivateResgistration()">Deactivate Registration</button>
+
+                        </div>
+                 
+                </div>
+                <div class="row form-group" align="center">
+                     <div>
+                             <button type="submit" class="btn btn-primary" ng-click="addEvent()">View events</button>
+                             <button type="submit" class="btn btn-primary" ng-click="sentEmailToAdmins()">Send email admins</button>
+                             <button type="submit" class="btn btn-primary" ng-click="sendEmailToParents()">Send email parents</button>
+                             </div>
+                </div>
+       
+        
+      </div>
+      </div>

@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Application status</div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <form  novalidate>
+	        <div class="row">
+	                    <div class="col-md-12" ng-if="status">
+	                        <div class="form-group" >
+	                            <label for="companysite">Enter student/id number <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="test" name="name" placeholder="check status" class ="form-control" ng-model="user.studentNumber" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+                       
+	                </div>
+	                
+	                 <div class="row col-md-12" >
+                <div class="form-group" >             
+                  <textarea ng-if="!status" textalign="center" rows="6" name="name" class ="form-control" ng-model="user.proof" ng-readonly="true" required />
+                   </div>
+             </div>
+
+        </form>
+
+
+
+        </div>
+      </div>
+      </div>

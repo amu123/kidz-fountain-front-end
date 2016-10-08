@@ -1,0 +1,145 @@
+<div class="container">
+    <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Application <span style="color: red; float: right;">required fields *</span></div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <form  novalidate>
+	        <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Name <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" placeholder="Name" class ="form-control" ng-model="user.name" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                
+
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">surname <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="surname" class="form-control" ng-model="user.surname" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">ID <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" maxlength="13" name="name" id="companysite" placeholder="id" class="form-control" ng-model="user.idNumber" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div> 	 
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Parent name <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="Parent name" class="form-control" ng-model="user.parentName" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div> 	
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Parent Surname <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="parent surname" class="form-control" ng-model="user.parentSurname" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div> 	
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Parent ID <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" maxlength="13" name="name" id="companysite" placeholder="parent id" class="form-control" ng-model="user.parentIdNumber" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div> 	              
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Contact <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" maxlength="10" name="name" id="companysite" placeholder="contact" class="form-control" ng-model="user.contact" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Address <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="address" class="form-control" ng-model="user.address" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                    
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Email <strong style="color: red">*</strong></label>
+	                            <div>
+	                                <input type="text" name="name" id="companysite" placeholder="email" class="form-control" ng-model="user.email" required />
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group" >
+	                            <label for="companysite">Extra mural activities</label>
+	                            <div>
+	                               <input type="checkbox" ng-model="user.computerLessons">
+	                                <label >Computer lessons</label>
+	                                <input type="checkbox" ng-model="user.swimmingLessons" >
+	                                <label >Swimming lessons</label>
+	                                <input type="checkbox" ng-model="user.soccerLessons">
+	                                <label >Soccer lesson</label>
+	                                <input type="checkbox"  ng-model="user.dacingLessons">
+	                                <label >Dancing lessons</label>
+	                                
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <button type="submit" class="btn btn-primary btn-block" ng-click="save()"> Save </button>
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+        </div>
+      </div>
+      </div>

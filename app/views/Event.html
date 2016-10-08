@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="panel panel-default" >
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Add event <span style="color: red; float: right;">required fields *</span></div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" >
+        <form  novalidate>
+          <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group" >
+                              <label for="companysite">Title <strong style="color: red">*</strong></label>
+                              <div>
+                                  <input type="text" name="name" placeholder="Title" class ="form-control" ng-model="event.title" required />
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  
+
+             <div class="row">
+               <div class="col-md-12">
+              <div class="form-group" >   
+                 <label >Description <strong style="color: red">*</strong></label>          
+                <textarea textalign="center" placeholder = "Event description" rows="5" name="name" ng-model="event.description" class ="form-control" required />
+                 </div>
+                 </div>
+            </div>
+  
+                 <div class="row">
+                  <div class="col-md-12">
+                     <label for="start-date">Event Date:<Strong style="color: red">*</Strong></label>
+                        <input id="start-date" type="date" class="form-control"  placeholder="" ="{{ date | date: 'yyyy-MM-dd' }}" name="name" ng-model="date" required>
+                  
+                  </div>
+                  </div><br>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <button type="submit" class="btn btn-primary btn-block" ng-click="add()"> Save </button>
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+        </div>
+      </div>
+      </div>

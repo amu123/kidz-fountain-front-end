@@ -1,0 +1,112 @@
+<div class="container">
+    <div class="panel panel-default">
+        <!-- <div style="float: right; margin-right:5px;">Required fields <strong style="color: red; float: right;">*</strong></div> -->
+        <div class="panel-heading">
+            <div class="panel-title text-center">Up Coming Events</div>
+        </div>
+
+        <!-- <h1 class="title text-center">Profile</h1> -->
+
+        <div class="panel-body" style="overflow:auto" >
+        <h1 ng-if="!activeEvents" align="center">No up coming events</h1>
+        <table ng-if="activeEvents" st-table="rowCollection" class="table table-striped">
+              <thead>
+            <tr>
+                <th st-sort="title">Title</th>
+                <th st-sort="description">Description</th>
+                <th st-sort="date">Date</th>
+                <th >Actions</th>
+                 </tr>
+
+                 </thead>
+
+                <tbody>
+                <tr valign="middle" ng-repeat="event in events">
+                <td><a ng-click="edit(admin)">{{event.title}}</a></td>
+                <td>{{event.description}}</td>
+                <td>{{event.date}}</td>
+
+                <td>
+                 <div class='table-action-container'>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <a class="btn-xs btn-danger table-action-btn"  ng-click="delete(event)">
+                            <span class="button btn-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                          </a>
+                         
+                        </div>
+                       
+                       
+                    </div>
+                    </div>
+                </td>
+                </tr>
+                </tbody>
+                
+           
+           
+         </table>
+            
+        </div>
+        </div>
+
+  
+
+      <div class="panel panel-default" >
+        
+        <div class="panel-heading">
+            <div class="panel-title text-center">Previous Events</div>
+            </div>
+
+        <div class="panel-body" style="overflow:auto">
+        <h1 ng-if="!isDeactiveEvents" align="center">No Previous events</h1>
+        <table ng-if="isDeactiveEvents" st-table="rowCollection" class="table table-striped">
+              <thead>
+            <tr>
+                <th st-sort="title">Title</th>
+                <th st-sort="description">Description</th>
+                <th st-sort="date">Date</th>
+                <th >Actions</th>
+
+                <tbody>
+                <tr valign="middle" ng-repeat="event in deactiveEvents">
+                <td><a ng-click="edit(admin)">{{event.title}}</a></td>
+                <td>{{event.description}}</td>
+                <td>{{event.date}}</td>
+
+                <td>
+                 <div class='table-action-container'>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <a class="btn-xs btn-danger table-action-btn"  ng-click="deletes(event)">
+                            <span class="button btn-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                          </a>
+                         
+                        </div>
+                       
+                       
+                    </div>
+                    </div>
+                </td>
+                </tr>
+                </tbody>
+                
+            </tr>
+            </thead>
+         </table>
+        </div>
+
+      </div>
+
+      
+          <div class="row " >
+                    
+                        <div class="form-group" align="center">
+                             <button type="submit" class="btn btn-primary" ng-click="add()">Add event</button>
+                              <button type="submit" class="btn btn-primary" ng-click="home()">Home</button>
+                             </div>
+     
+      </div>
+      </div>
+
+    
