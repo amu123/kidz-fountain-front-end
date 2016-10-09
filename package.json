@@ -37,6 +37,7 @@
     "node": "5.0.0"
   },
   "scripts": {
+    "prestart": "npm install",
     "start": "grunt serve"
   }
 }
