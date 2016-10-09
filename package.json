@@ -17,6 +17,8 @@
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-deploy": "^0.1.7",
+    "grunt-dev-update": "^2.0.0",
     "grunt-filerev": "^2.1.2",
     "grunt-google-cdn": "^0.4.3",
     "grunt-jscs": "^1.8.0",
@@ -28,6 +30,7 @@
     "grunt-wiredep": "^2.0.0",
     "jit-grunt": "^0.9.1",
     "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0"
   },
   "engines": {
@@ -35,7 +38,7 @@
   },
   "dependencies": {
     "grunt": "*",
-    "grunt-contrib": "*",
+    "grunt-contrib": "^0.11.0",
     "less": "*"
   },
   "scripts": {

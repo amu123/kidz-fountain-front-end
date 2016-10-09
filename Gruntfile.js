@@ -27,6 +27,17 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
 
+    deploy: {
+    liveservers: {
+      options:{
+        
+        cmds_before_deploy: ["npm install"],
+        // cmds_after_deploy: ["forever restart", "some other cmds you want to exec after deploy"],
+        deploy_path: 'grunt serve'
+      }
+    }
+  },
+
     // Project settings
     yeoman: appConfig,
 
@@ -515,6 +526,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('heroku:development', 'clean less mincss');
+  grunt.loadNpmTasks('grunt-deploy');
 
   
 };
