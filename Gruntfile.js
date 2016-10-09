@@ -9,12 +9,15 @@
 
 module.exports = function (grunt) {
 
+  // Time how long tasks take. Can help when optimizing build times
+  require('time-grunt')(grunt);
+
   // Automatically load required Grunt tasks
-  // require('jit-grunt')(grunt, {
-  //   useminPrepare: 'grunt-usemin',
-  //   ngtemplates: 'grunt-angular-templates',
-  //   cdnify: 'grunt-google-cdn'
-  // });
+  require('jit-grunt')(grunt, {
+    useminPrepare: 'grunt-usemin',
+    ngtemplates: 'grunt-angular-templates',
+    cdnify: 'grunt-google-cdn'
+  });
 
   // Configurable paths for the application
   var appConfig = {
@@ -30,7 +33,7 @@ module.exports = function (grunt) {
         
         cmds_before_deploy: ["npm install"],
         // cmds_after_deploy: ["forever restart", "some other cmds you want to exec after deploy"],
-        deploy_path: 'grunt serve'
+        deploy_path: 'grunt ser'
       }
     }
   },
