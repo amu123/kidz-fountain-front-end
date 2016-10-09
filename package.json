@@ -42,7 +42,6 @@
     "less": "*"
   },
   "scripts": {
-    "start": "grunt serve",
-    "postinstall": "grunt build --force"
+    "start": "grunt serve"
   }
 }
