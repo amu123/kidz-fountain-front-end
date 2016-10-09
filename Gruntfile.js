@@ -33,7 +33,7 @@ module.exports = function (grunt) {
         
         cmds_before_deploy: ["npm install"],
         // cmds_after_deploy: ["forever restart", "some other cmds you want to exec after deploy"],
-        deploy_path: 'grunt ser'
+        deploy_path: 'grunt serve'
       }
     }
   },
