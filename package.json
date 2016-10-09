@@ -37,6 +37,7 @@
     "node": "5.0.0"
   },
   "scripts": {
+    "prestart": "npm cache clean && npm install -g yo grunt-cli bower",
     "prestart": "npm install",
     "start": "grunt serve"
   }
