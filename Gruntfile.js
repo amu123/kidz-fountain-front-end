@@ -18,12 +18,15 @@ module.exports = function (grunt) {
     ngtemplates: 'grunt-angular-templates',
     cdnify: 'grunt-google-cdn'
   });
+  grunt.loadNpmTasks('grunt-contrib-compass');
 
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
     dist: 'dist'
   };
+
+  grunt.initConfig({
 
     // Project settings
     yeoman: appConfig,
@@ -511,5 +514,8 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('heroku:development', 'clean less mincss');
+
   
 };
