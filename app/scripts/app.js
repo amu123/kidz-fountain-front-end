@@ -57,9 +57,9 @@ var KidzFountainWebApp = angular.module('KidzFountainWebApp', ['ngAnimate', 'ngA
 
   //Server https://secret-crag-94036.herokuapp.com/
 
-   // KidzFountainWebApp.constant('serverUrl', 'http://54.148.241.255');
+   KidzFountainWebApp.constant('serverUrl', 'http://54.148.241.255');
 
-    KidzFountainWebApp.constant('serverUrl', 'http://localhost:8080');
+    // KidzFountainWebApp.constant('serverUrl', 'http://localhost:8080');
   config.$inject = ['$routeProvider', '$locationProvider'];
 
   function config($routeProvider, $locationProvider) {
